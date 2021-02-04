@@ -1,0 +1,47 @@
+.emt-button {
+  background-color: transparent;
+  border: 1px solid rgba(153, 153, 153, 1);
+  border-radius: 4px;
+  padding: 4px 1em;
+  margin: 10px;
+  transition: border-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.emt-button:hover {
+  border-color: #000000;
+}
+.emt-button:focus {
+  outline: none;
+  border-color: #000000;
+}
+.emt-button-circle {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background: #cccccc;
+  opacity: 0.5;
+  display: inline-block;
+  position: absolute;
+  z-index: 0;
+  animation: 0.5s big forwards;
+}
+.emt-button-slot {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes big {
+  0% {
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(10);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
